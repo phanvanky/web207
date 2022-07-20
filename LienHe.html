@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH13481</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+      <header class="row">
+        <img src="images/banner.png" class="rounded mx-auto d-block" alt="...">
+    </header>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FPT Polytechnic</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="GioiThieu.html">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="LienHe.html">Liên hệ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Gopy.html">Góp ý</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hoiDap.html">Hỏi đáp</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tài khoản</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="DangKy.html">Đăng ký</a></li>
+                      <li><a class="dropdown-item" href="DangNhap.html">Đăng nhập</a></li>
+                      <li><a class="dropdown-item" href="QuenMK.html">Quên mật khẩu</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                      <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                      <li><a class="dropdown-item" href="CapNhatTK.html">Cập nhật tài khoản</a></li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <section class="row ">
+      <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="wrapper">
+                            <div class="row no-gutters">
+                                <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+                                    <div class="contact-wrap w-100 p-md-5 p-4">
+                                        <h3 class="mb-4">Liên hệ</h3>
+                                        <div id="form-message-warning" class="mb-4"></div> 
+                                  <div id="form-message-success" class="mb-4">
+                                Chúng tôi sẽ trả lời bạn trong thời gian sớm nhất!
+                                  </div>
+                                        <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="label" for="name">Họ và tên</label>
+                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Tên">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6"> 
+                                                    <div class="form-group">
+                                                        <label class="label" for="email">Email</label>
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="label" for="subject">Tiêu đề</label>
+                                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Tiêu đề">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="label" for="#">Nội dung</label>
+                                                        <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Nội dung"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="submit" value="Gửi" class="btn btn-primary">
+                                                        <div class="submitting"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+                                    <div class="info-wrap bg-success w-100 p-md-5 p-4">
+                                        <h3>Thông tin liên hệ</h3>
+                                        
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Địa chỉ:</span> Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</p>
+                                  </div>
+                              </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Điện thoại:</span> 0123456789</p>
+                                  </div>
+                              </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Email:</span> hoangnam9809@gmail.com</p>
+                                  </div>
+                              </div>
+                              <div class="dbox w-100 d-flex align-items-center">
+                                <iframe  class="m-auto" src=""></iframe>
+                          </div>
+                          </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    </section>
+    <footer class="row pt-6 ">
+      <p class=" text-center text-dark pt-9">FPT Polytechnic &copy; 2021. All rights reserved</p>
+    </footer>
+    </div>
+    
+    <!-- Script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH13481</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+      <header class="row">
+        <img src="images/banner.png" class="rounded mx-auto d-block" alt="...">
+    </header>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FPT Polytechnic</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Góp ý</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hỏi đáp</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tài khoản</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                      <li><a class="dropdown-item" href="DangNhap.html">Đăng nhập</a></li>
+                      <li><a class="dropdown-item" href="QuenMK.html">Quên mật khẩu</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                      <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                      <li><a class="dropdown-item" href="#">Cập nhật tài khoản</a></li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+      <div class="col-12 m-auto pt-5 pb-5">
+        <div class="card" style="background-color: lightblue;">
+          <div class="card-header ">
+            <h4 class="text-danger"><i class="fas fa-edit"></i> Cập nhật tài khoản</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="input1" class="font-weight-bold">Họ và tên: </label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="far fa-address-card"></i></span>
+                    </div>
+                    <input type="text" ng-model="student.fullname"  class="form-control" id="input1" placeholder="Họ và tên" >
+                  </div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="input2" class="font-weight-bold">Email</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" ng-model="student.email" class="form-control" id="input2" placeholder="Email" >
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="input3" class="font-weight-bold">Ngày sinh</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                    <input type="text" ng-model="student.birthday" class="form-control" id="input3" placeholder="Ngày Sinh" >
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="input4" class="font-weight-bold">Học Phí</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+                    </div>
+                    <input type="text" ng-model="student.schoolfee" class="form-control" id="input4" placeholder="Học Phí" disabled value="3">
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="input5" class="font-weight-bold">Điểm</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fas fa-award"></i></span>
+                    </div>
+                    <input type="text" ng-model="student.marks" class="form-control" id="input5" placeholder="Điểm" disabled value="3">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-lg btn-success btn-block text-uppercase" type="submit" ng-click="update()" >CẬP NHẬT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <footer class="row pt-6">
+      <p class=" text-center text-dark pt-9">FPT Polytechnic &copy; 2021. All rights reserved</p>
+    </footer>
+    </div>
+    
+    <!-- Script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

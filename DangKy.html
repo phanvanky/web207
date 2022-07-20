@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH13481</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+      <header class="row">
+        <img src="images/banner.png" class="rounded mx-auto d-block" alt="...">
+    </header>
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">FPT Polytechnic</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Góp ý</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hỏi đáp</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tài khoản</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="DangKy.html">Đăng ký</a></li>
+                      <li><a class="dropdown-item" href="DangNhap.html">Đăng nhập</a></li>
+                      <li><a class="dropdown-item" href="QuenMK.html">Quên mật khẩu</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                      <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                      <li><a class="dropdown-item" href="CapNhatTK.html">Cập nhật tài khoản</a></li>
+                    </ul>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <section class="row">
+      <aside class="col-3"></aside>
+      <article class="col-6 ">
+        
+        <div class="card-body">
+          <h5 class="card-title text-center">Đăng Ký</h5>
+          <form class="form-signin" name="frmBonus">
+            <div class="form-label-group">
+              <input type="text" ng-model="student.username" name="txtTaiKhoan" id="inputUserame" class="form-control" placeholder="Tài Khoản" required >
+              <label for="inputUserame">Tài Khoản</label>
+              <span ng-show="frmBonus.txtTaiKhoan.$invalid" class="badge badge-danger ml-3">Vui lòng nhập tài khoản</span>
+            </div>
+            <div class="form-label-group">
+              <input type="password" ng-model="student.password" name="txtMatKhau" id="inputPassword" class="form-control" placeholder="Mật Khẩu" required >
+              <label for="inputPassword">Mật Khẩu</label>
+              <span ng-show="frmBonus.txtMatKhau.$invalid" class="badge badge-danger ml-3">Vui lòng nhập mật khẩu</span>
+            </div>
+            
+            <div class="form-label-group">
+              <input type="password" ng-model="student.passwordCf" name="txtXNMatKhau" id="inputConfirmPassword" class="form-control" placeholder="Xác nhận mật khẩu" required>
+              <label for="inputConfirmPassword">Xác nhận mật khẩu</label>
+              <span ng-show="frmBonus.txtXNMatKhau.$invalid" class="badge badge-danger ml-3">Vui lòng nhập xác nhận mật khẩu</span>
+
+            </div>
+            
+            <div class="form-label-group">
+              <input type="text" ng-model="student.fullname" name="txtHoVaTen" id="inputHVT" class="form-control" placeholder="Họ và tên" required>
+              <label for="inputHVT">Họ và tên</label>
+              <span ng-show="frmBonus.txtHoVaTen.$invalid" class="badge badge-danger ml-3">Vui lòng nhập họ và tên</span>
+            </div>
+
+            <div class="form-label-group">
+              <input type="email" ng-model="student.email" name="txtEmail" id="inputEmail" class="form-control" placeholder="Địa chỉ Email" required>
+              <label for="inputEmail">Địa chỉ Email </label>
+              <span ng-show="frmBonus.txtEmail.$invalid" class="badge badge-danger ml-3">Vui lòng không để trống & nhập đúng định dạng Email</span>
+            </div>
+
+            <div class="form-group">
+              <label class="ml-3 mr-3">Giới tính: </label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" name = "gender" ng-model="gender" value="true" class="custom-control-input" id="customRadioInline1" required>
+                <label class="custom-control-label" for="customRadioInline1">Nam</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" name="gender" ng-model="gender" value="false" class="custom-control-input" id="customRadioInline2">
+                <label class="custom-control-label" for="customRadioInline2">Nữ</label>
+              </div>
+            </div>
+            <div class="form-label-group">
+              <input type="text" ng-model="student.birthday" name="txtNgaySinh" id="inputNgaySinh" class="form-control"  required>
+              <label for="inputNgaySinh">Ngày sinh (YYYY-MM-DD)</label>
+              <span ng-show="frmBonus.txtNgaySinh.$invalid" class="badge badge-danger ml-3">Vui lòng nhập ngày sinh</span>
+            </div>
+
+            <input type="hidden" ng-model="student.marks" value="0" name="marks" id="summark"/>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" ng-click="insert()" >Đăng Ký</button>
+            <a class="d-block text-center mt-2 small" href="DangNhap.html">Đăng Nhập</a>
+          </form>
+        </div>
+        
+      </article>
+      <footer class="col-3"></footer>
+    </section>
+    </div>
+    
+    <!-- Script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
